@@ -69,17 +69,38 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
+
+                const SizedBox(height: 30),
                 // category
-                const SizedBox(height: 30),
-                const Category(
-                  image: AssetImage('assets/xbox1.png'),
-                  text: 'Console\nand Joystick',
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Container(
+                    height: 550,
+                    child: ListView(
+                      children: const [
+                        Category(
+                          image: AssetImage('assets/xbox1.png'),
+                          text: 'Console\nand Joystick',
+                          color: Colors.red,
+                        ),
+                        SizedBox(height: 30),
+                        Category(
+                          image: AssetImage('assets/virtualgame.png'),
+                          text: 'Virtual\nController',
+                          color: Colors.lightBlueAccent,
+                        ),
+                        SizedBox(height: 30),
+                        Category(
+                          image: AssetImage('assets/camera.png'),
+                          text: 'Camera',
+                          color: Colors.black,
+                        ),
+                        // const SizedBox(height: 50),
+                      ],
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 30),
-                const Category(
-                  image: AssetImage('assets/virtualgame.png'),
-                  text: 'Virtual Controller',
-                ),
               ],
             ),
           ),

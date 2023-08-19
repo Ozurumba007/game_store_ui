@@ -3,21 +3,23 @@ import 'package:flutter/material.dart';
 class Category extends StatelessWidget {
   final ImageProvider<Object> image;
   final String text;
+  final Color color;
 
   const Category({
     super.key,
     required this.image,
     required this.text,
+    required this.color,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(30),
+      padding: const EdgeInsets.all(25),
       height: 300,
       width: 300,
       decoration: BoxDecoration(
-        color: Colors.deepPurpleAccent,
+        color: color,
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
