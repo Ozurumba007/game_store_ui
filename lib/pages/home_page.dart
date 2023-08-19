@@ -70,9 +70,8 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                 ),
-
-                const SizedBox(height: 30),
                 // category
+                const SizedBox(height: 30),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Container(

@@ -10,9 +10,41 @@ class ConsoleAndJoystick extends StatefulWidget {
 class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('Ozurumba Onwuasoanya'),
+    return const Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                // search icon + filter icon
+
+                SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Icon(Icons.search, size: 35),
+                    SizedBox(width: 15),
+                    Icon(Icons.filter_list, size: 35),
+                  ],
+                ),
+                SizedBox(height: 10),
+                // heading text (console and joystick)
+                Row(
+                  children: [
+                    Text(
+                      "Console\nand Joystick",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
