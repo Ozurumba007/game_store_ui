@@ -77,14 +77,17 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     height: 550,
                     child: ListView(
-                      children: const [
-                        Category(
-                          image: AssetImage('assets/xbox1.png'),
-                          text: 'Console\nand Joystick',
-                          color: Colors.red,
+                      children: [
+                        GestureDetector(
+                          onTap: () {},
+                          child: const Category(
+                            image: AssetImage('assets/xbox1.png'),
+                            text: 'Console\nand Joystick',
+                            color: Colors.red,
+                          ),
                         ),
-                        SizedBox(height: 30),
-                        Category(
+                        const SizedBox(height: 30),
+                        const Category(
                           image: AssetImage('assets/virtualgame.png'),
                           text: 'Virtual\nController',
                           color: Colors.lightBlueAccent,
@@ -95,7 +98,6 @@ class _HomePageState extends State<HomePage> {
                           text: 'Camera',
                           color: Colors.black,
                         ),
-                        // const SizedBox(height: 50),
                       ],
                     ),
                   ),
