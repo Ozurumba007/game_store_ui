@@ -15,14 +15,14 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: SingleChildScrollView(
             child: Column(
               children: [
                 // search icon + filter icon
 
-                SizedBox(height: 10),
-                Row(
+                const SizedBox(height: 10),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Icon(Icons.search, size: 35),
@@ -30,7 +30,7 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                     Icon(Icons.filter_list, size: 35),
                   ],
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 // heading text (console and joystick)
                 const Row(
                   children: [
@@ -43,6 +43,9 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                     ),
                   ],
                 ),
+
+                // scrollable list of product
+                const SizedBox(height: 30),
                 Container(
                   height: 40,
                   child: ListView(
@@ -57,6 +60,19 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                       ),
                     ],
                   ),
+                ),
+                const SizedBox(height: 20),
+
+                const Row(
+                  children: [
+                    Text(
+                      '239 results',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
