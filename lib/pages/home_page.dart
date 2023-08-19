@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               // scrollable list of product
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               Container(
                 height: 40,
                 child: ListView(
@@ -67,10 +67,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
-              Container(
-                child: Image.asset(''),
-              ),
+              const SizedBox(height: 30),
             ],
           ),
         ),
