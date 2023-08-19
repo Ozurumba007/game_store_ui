@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gaming_store_app/pages/console_and_joystick.dart';
 
 import '../component/category.dart';
 import '../component/list_of_product.dart';
@@ -79,7 +80,12 @@ class _HomePageState extends State<HomePage> {
                     child: ListView(
                       children: [
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ConsoleAndJoystick(),
+                            ),
+                          ),
                           child: const Category(
                             image: AssetImage('assets/xbox1.png'),
                             text: 'Console\nand Joystick',
