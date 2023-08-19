@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../component/list_of_product.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -40,32 +42,27 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ],
               ),
-              sizedBox10,
+              // scrollable list of product
+              SizedBox(height: 30),
               Container(
-                height: 50,
+                height: 40,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  children: [
-                    Container(
-                      color: Colors.grey,
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Center(child: Text('🔥 Deal')),
-                      ),
+                  children: const [
+                    ListofProduct(
+                      text: '📱  Phones',
                     ),
-                    Container(
-                      color: Colors.grey,
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('📱 Videogames'),
-                      ),
+                    SizedBox(width: 8),
+                    ListofProduct(
+                      text: '🎮  Videogames',
                     ),
-                    Container(
-                      color: Colors.grey,
-                      child: const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text('📱 Phones'),
-                      ),
+                    SizedBox(width: 8),
+                    ListofProduct(
+                      text: '📷  Camera',
+                    ),
+                    SizedBox(width: 8),
+                    ListofProduct(
+                      text: '💻  Laptop',
                     ),
                   ],
                 ),

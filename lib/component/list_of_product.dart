@@ -10,9 +10,12 @@ class ListofProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey[200],
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: BorderRadiusDirectional.circular(12),
+      ),
       child: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(12.0),
         child: Center(
           child: Text(
             text,
