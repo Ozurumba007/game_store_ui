@@ -10,15 +10,16 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    const sizedBox10 = SizedBox(height: 10);
+    return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: Column(
             children: [
-              SizedBox(height: 10),
+              sizedBox10,
               // search icon + filter icon
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Icon(Icons.search, size: 35),
@@ -27,8 +28,8 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
               // Heading text (what is the right deal for you)
-              SizedBox(height: 10),
-              Row(
+              sizedBox10,
+              const Row(
                 children: [
                   Text(
                     "What's the right\ndeal for you ?",
@@ -38,6 +39,36 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ],
+              ),
+              sizedBox10,
+              Container(
+                height: 50,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      color: Colors.grey,
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Center(child: Text('🔥 Deal')),
+                      ),
+                    ),
+                    Container(
+                      color: Colors.grey,
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('📱 Videogames'),
+                      ),
+                    ),
+                    Container(
+                      color: Colors.grey,
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('📱 Phones'),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
