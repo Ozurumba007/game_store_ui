@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../component/list_of_product.dart';
+
 class ConsoleAndJoystick extends StatefulWidget {
   const ConsoleAndJoystick({super.key});
 
@@ -10,7 +12,7 @@ class ConsoleAndJoystick extends StatefulWidget {
 class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -30,7 +32,7 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                 ),
                 SizedBox(height: 10),
                 // heading text (console and joystick)
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Console\nand Joystick",
@@ -40,6 +42,21 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                       ),
                     ),
                   ],
+                ),
+                Container(
+                  height: 40,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: const [
+                      ListofProduct(
+                        text: '🔥  Deals',
+                      ),
+                      SizedBox(width: 8),
+                      ListofProduct(
+                        text: '🎮  Videogames',
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
