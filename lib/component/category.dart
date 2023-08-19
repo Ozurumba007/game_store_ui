@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Category extends StatelessWidget {
-  const Category({super.key});
+  final ImageProvider<Object> image;
+  final String text;
+
+  const Category({
+    super.key,
+    required this.image,
+    required this.text,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -20,15 +27,15 @@ class Category extends StatelessWidget {
             offset: Offset(0, 3),
           ),
         ],
-        image: const DecorationImage(
-          image: AssetImage('assets/xbox1.png'),
+        image: DecorationImage(
+          image: image,
           fit: BoxFit.cover,
         ),
       ),
-      child: const Align(
+      child: Align(
         alignment: Alignment.bottomLeft,
         child: Text(
-          'Console\nand Joystick',
+          text,
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
