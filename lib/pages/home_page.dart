@@ -67,6 +67,10 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              SizedBox(height: 20),
+              Container(
+                child: Image.asset(''),
+              ),
             ],
           ),
         ),
