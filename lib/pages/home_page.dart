@@ -10,9 +10,25 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('What the right deal for you'),
+    return const Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          child: Column(
+            children: [
+              SizedBox(height: 10),
+              // search icon + filter icon
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Icon(Icons.search, size: 35),
+                  SizedBox(width: 15),
+                  Icon(Icons.filter_list, size: 35),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
