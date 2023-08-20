@@ -64,8 +64,8 @@ class HotDeals extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.grey[300],
-                image: const DecorationImage(
-                  image: AssetImage('assets/joystick.png'),
+                image: DecorationImage(
+                  image: secondImage,
                 ),
               ),
             ),
