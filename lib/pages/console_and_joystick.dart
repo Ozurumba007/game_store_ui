@@ -74,6 +74,53 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                     ),
                   ],
                 ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: 200,
+                          height: 180,
+                          decoration: BoxDecoration(
+                            color: Colors.blueAccent,
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              image: AssetImage('assets/controller.png'),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          'xBox one Controller',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          'Limited edition',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      height: 250,
+                      width: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.grey[300],
+                        image: DecorationImage(
+                          image: AssetImage('assets/joystick.png'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
@@ -82,3 +129,82 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
     );
   }
 }
+
+    // Container(
+    //               height: 500,
+    //               child: ListView(
+    //                 scrollDirection: Axis.vertical,
+    //                 children: [
+    //                   Row(
+    //                     children: [
+    //                       Container(
+    //                         width: 180,
+    //                         height: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           image: DecorationImage(
+    //                             image: AssetImage('assets/controller.png'),
+    //                           ),
+    //                         ),
+    //                         child: Text('Loyal'),
+    //                       ),
+    //                       Container(
+    //                         height: 180,
+    //                         width: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           color: Colors.black,
+    //                         ),
+    //                       ),
+    //                     ],
+    //                   ),
+    //                   Row(
+    //                     children: [
+    //                       Container(
+    //                         width: 180,
+    //                         height: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           image: DecorationImage(
+    //                             image: AssetImage('assets/controller.png'),
+    //                           ),
+    //                         ),
+    //                         child: Text('Loyal'),
+    //                       ),
+    //                       Container(
+    //                         height: 180,
+    //                         width: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           color: Colors.black,
+    //                         ),
+    //                       ),
+    //                     ],
+    //                   ),
+    //                   Row(
+    //                     children: [
+    //                       Container(
+    //                         width: 180,
+    //                         height: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           image: DecorationImage(
+    //                             image: AssetImage('assets/controller.png'),
+    //                           ),
+    //                         ),
+    //                         child: Text('Loyal'),
+    //                       ),
+    //                       Container(
+    //                         height: 180,
+    //                         width: 200,
+    //                         decoration: BoxDecoration(
+    //                           borderRadius: BorderRadius.circular(20),
+    //                           color: Colors.black,
+    //                         ),
+    //                       ),
+    //                     ],
+    //                   ),
+    //                 ],
+    //               ),
+    //             ),
+            
