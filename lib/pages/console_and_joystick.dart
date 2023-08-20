@@ -74,6 +74,7 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                     ),
                   ],
                 ),
+                SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -84,21 +85,23 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                           width: 200,
                           height: 180,
                           decoration: BoxDecoration(
-                            color: Colors.blueAccent,
+                            color: Colors.grey[300],
                             borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: AssetImage('assets/controller.png'),
                             ),
                           ),
                         ),
-                        Text(
-                          'xBox one Controller',
+                        SizedBox(height: 10),
+                        const Text(
+                          'Xbox one Controller',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(
+                        SizedBox(height: 8),
+                        const Text(
                           'Limited edition',
                           style: TextStyle(
                             fontSize: 16,
@@ -107,17 +110,6 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                           ),
                         ),
                       ],
-                    ),
-                    Container(
-                      height: 250,
-                      width: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.grey[300],
-                        image: DecorationImage(
-                          image: AssetImage('assets/joystick.png'),
-                        ),
-                      ),
                     ),
                   ],
                 ),
