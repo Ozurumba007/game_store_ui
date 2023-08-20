@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../component/hot_deals.dart';
 import '../component/list_of_product.dart';
 
 class ConsoleAndJoystick extends StatefulWidget {
@@ -74,44 +75,32 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                     ),
                   ],
                 ),
-                SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          width: 200,
-                          height: 180,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[300],
-                            borderRadius: BorderRadius.circular(20),
-                            image: const DecorationImage(
-                              image: AssetImage('assets/controller.png'),
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                        const Text(
-                          'Xbox one Controller',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        SizedBox(height: 8),
-                        const Text(
-                          'Limited edition',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                const SizedBox(height: 10),
+                const HotDeals(
+                  productTitle: 'Xbox One Controller',
+                  productPrice: 'Limited edition',
+                  image: AssetImage('assets/playstion4.png'),
+                  secondProductTitle: 'Thrustmaster\nJoystick',
+                  secondProductPrice: '49£',
+                  secondImage: AssetImage('assets/xboxcontroller.png'),
+                ),
+                const SizedBox(height: 10),
+                const HotDeals(
+                  productTitle: 'Xbox One Controller',
+                  productPrice: 'Limited edition',
+                  image: AssetImage('assets/playstion4.png'),
+                  secondProductTitle: 'Thrustmaster\nJoystick',
+                  secondProductPrice: '49£',
+                  secondImage: AssetImage('assets/xboxcontroller.png'),
+                ),
+                const SizedBox(height: 10),
+                const HotDeals(
+                  productTitle: 'Xbox One Controller',
+                  productPrice: 'Limited edition',
+                  image: AssetImage('assets/playstion4.png'),
+                  secondProductTitle: 'Thrustmaster\nJoystick',
+                  secondProductPrice: '49£',
+                  secondImage: AssetImage('assets/xboxcontroller.png'),
                 ),
               ],
             ),
@@ -121,82 +110,3 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
     );
   }
 }
-
-    // Container(
-    //               height: 500,
-    //               child: ListView(
-    //                 scrollDirection: Axis.vertical,
-    //                 children: [
-    //                   Row(
-    //                     children: [
-    //                       Container(
-    //                         width: 180,
-    //                         height: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           image: DecorationImage(
-    //                             image: AssetImage('assets/controller.png'),
-    //                           ),
-    //                         ),
-    //                         child: Text('Loyal'),
-    //                       ),
-    //                       Container(
-    //                         height: 180,
-    //                         width: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           color: Colors.black,
-    //                         ),
-    //                       ),
-    //                     ],
-    //                   ),
-    //                   Row(
-    //                     children: [
-    //                       Container(
-    //                         width: 180,
-    //                         height: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           image: DecorationImage(
-    //                             image: AssetImage('assets/controller.png'),
-    //                           ),
-    //                         ),
-    //                         child: Text('Loyal'),
-    //                       ),
-    //                       Container(
-    //                         height: 180,
-    //                         width: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           color: Colors.black,
-    //                         ),
-    //                       ),
-    //                     ],
-    //                   ),
-    //                   Row(
-    //                     children: [
-    //                       Container(
-    //                         width: 180,
-    //                         height: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           image: DecorationImage(
-    //                             image: AssetImage('assets/controller.png'),
-    //                           ),
-    //                         ),
-    //                         child: Text('Loyal'),
-    //                       ),
-    //                       Container(
-    //                         height: 180,
-    //                         width: 200,
-    //                         decoration: BoxDecoration(
-    //                           borderRadius: BorderRadius.circular(20),
-    //                           color: Colors.black,
-    //                         ),
-    //                       ),
-    //                     ],
-    //                   ),
-    //                 ],
-    //               ),
-    //             ),
-            
