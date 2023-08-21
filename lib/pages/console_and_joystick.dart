@@ -76,10 +76,20 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                   ],
                 ),
                 const SizedBox(height: 10),
-                const HotDeals(
-                  productTitle: 'Xbox One Controller',
+                HotDeals(
+                  // the first frame in the row widget
+                  productTitle: 'PlayStation Four Controller',
                   productPrice: 'Limited edition',
-                  image: AssetImage('assets/playstation4.png'),
+                  image: AssetImage('assets/play4controller.png'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProductDetailPage(),
+                      ),
+                    );
+                  },
+                  // the second frame in the row widget
                   secondProductTitle: 'Thrustmaster\nJoystick',
                   secondProductPrice: '49£',
                   secondImage: AssetImage('assets/joystick.png'),
