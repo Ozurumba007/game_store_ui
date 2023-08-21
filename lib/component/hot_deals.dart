@@ -27,7 +27,7 @@ class HotDeals extends StatelessWidget {
           children: [
             Container(
               width: 200,
-              height: 180,
+              height: 200,
               decoration: BoxDecoration(
                 color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(20),
@@ -58,6 +58,7 @@ class HotDeals extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            const SizedBox(height: 20),
             Container(
               height: 250,
               width: 150,
