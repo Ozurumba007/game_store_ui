@@ -33,6 +33,7 @@ class HotDeals extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 image: DecorationImage(
                   image: image,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -67,6 +68,7 @@ class HotDeals extends StatelessWidget {
                 color: Colors.grey[300],
                 image: DecorationImage(
                   image: secondImage,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
