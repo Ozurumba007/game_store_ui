@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gaming_store_app/pages/product_detail_page.dart';
 
 import '../component/hot_deals.dart';
 import '../component/list_of_product.dart';
@@ -96,18 +97,22 @@ class _ConsoleAndJoystickState extends State<ConsoleAndJoystick> {
                 ),
                 const SizedBox(height: 10),
                 const HotDeals(
+                  // the first frame in the row widget
                   productTitle: 'Play4 Controller',
                   productPrice: 'Few pieces',
                   image: AssetImage('assets/play4controller.png'),
+                  // the second frame in the row widget
                   secondProductTitle: 'Thrustmaster\nJoystick',
                   secondProductPrice: '100£',
                   secondImage: AssetImage('assets/joystick.png'),
                 ),
                 const SizedBox(height: 10),
                 const HotDeals(
+                  // the first frame in the row widget
                   productTitle: 'Xbox One Controller',
                   productPrice: 'Limited edition',
                   image: AssetImage('assets/xboxcontroller.png'),
+                  // the second frame in the row widget
                   secondProductTitle: 'Thrustmaster\nJoystick',
                   secondProductPrice: '49£',
                   secondImage: AssetImage('assets/xboxcontroller.png'),
