@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../component/details.dart';
+
 class ProductDetailPage extends StatefulWidget {
   const ProductDetailPage({super.key});
 
@@ -25,6 +27,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                 ],
               ),
+              const SizedBox(height: 30),
               Container(
                 height: 200,
                 width: 200,
@@ -34,6 +37,27 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       fit: BoxFit.cover),
                 ),
               ),
+              const Details(),
+              Spacer(),
+              Container(
+                height: 60,
+                width: 360,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Center(
+                  child: Text(
+                    'Buy now for 69£',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 30),
             ],
           ),
         ),

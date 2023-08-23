@@ -50,9 +50,9 @@ class Details extends StatelessWidget {
             Text(
               'Discover all the intensity, precision and\ncomfort of the Xbox One Wireless Controller.\nPulse triggers let you experience vibration\nfeedback so you hear every shot and\njolt in high definition',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 22,
                 fontWeight: FontWeight.w700,
-                color: Colors.grey[800],
+                color: Colors.grey[700],
               ),
             ),
           ],
